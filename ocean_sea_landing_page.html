@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Sea for Import and Export</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; direction: ltr; }
+        header { background-color: #005f73; color: white; padding: 20px; text-align: center; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; }
+        .lang-toggle { position: absolute; top: 20px; right: 20px; color: white; cursor: pointer; }
+        section { padding: 40px; }
+        .arabic { direction: rtl; text-align: right; display: none; }
+        footer { background-color: #005f73; color: white; text-align: center; padding: 10px; }
+
+        .section-title { font-size: 1.5em; color: #023047; margin-bottom: 10px; }
+    </style>
+    <script>
+        function toggleLanguage(lang) {
+            const englishContent = document.querySelectorAll('.english');
+            const arabicContent = document.querySelectorAll('.arabic');
+            if (lang === 'ar') {
+                englishContent.forEach(el => el.style.display = 'none');
+                arabicContent.forEach(el => el.style.display = 'block');
+            } else {
+                englishContent.forEach(el => el.style.display = 'block');
+                arabicContent.forEach(el => el.style.display = 'none');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Ocean Sea for Import and Export</h1>
+    <div class="lang-toggle">
+        <button onclick="toggleLanguage('en')">English</button> | 
+        <button onclick="toggleLanguage('ar')">العربية</button>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="english">
+        <h2 class="section-title">Welcome</h2>
+        <p>Welcome to Ocean Sea for Import and Export – Your trusted gateway to global trade.</p>
+    </div>
+    <div class="arabic">
+        <h2 class="section-title">مرحبًا</h2>
+        <p>مرحبًا بكم في أوشن سي للاستيراد والتصدير – بوابتكم الموثوقة للتجارة العالمية.</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="english">
+        <h2 class="section-title">About Us</h2>
+        <p>Ocean Sea is a dynamic import and export company offering reliable shipping and logistics solutions across the globe.</p>
+    </div>
+    <div class="arabic">
+        <h2 class="section-title">من نحن</h2>
+        <p>أوشن سي هي شركة استيراد وتصدير ديناميكية تقدم حلول شحن ولوجستيات موثوقة حول العالم.</p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="english">
+        <h2 class="section-title">Our Services</h2>
+        <ul>
+            <li>Import & Export by Sea and Air</li>
+            <li>Wholesale Distribution</li>
+            <li>Customs Clearance</li>
+            <li>Global Logistics</li>
+        </ul>
+    </div>
+    <div class="arabic">
+        <h2 class="section-title">خدماتنا</h2>
+        <ul>
+            <li>الاستيراد والتصدير بحريًا وجويًا</li>
+            <li>توزيع بالجملة</li>
+            <li>التخليص الجمركي</li>
+            <li>حلول لوجستية عالمية</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="english">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: info@oceanseaexport.com</p>
+        <p>Phone: +XXX XXX XXXX</p>
+    </div>
+    <div class="arabic">
+        <h2 class="section-title">تواصل معنا</h2>
+        <p>البريد الإلكتروني: info@oceanseaexport.com</p>
+        <p>الهاتف: +XXX XXX XXXX</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Ocean Sea for Import and Export. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
